@@ -2,7 +2,7 @@ pipeline {
 	agent any
 
 	stages{
-	  stage("Git Source Code CheckOut"){
+	  stage("Git Checkout"){
 		steps{
 		git branch: 'main', url: 'https://github.com/devopsncloud/CounterApp.git'
 
