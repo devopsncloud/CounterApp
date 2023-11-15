@@ -32,11 +32,11 @@ stage("Integration Testing "){
 stage ("Static code analysis"){
 	steps{
 
-	 withSonarQubeEnv(credentialsId: 'jenkinssonar') 
+	 withSonarQubeEnv(credentialsId: 'jenkinssonar'){ 
     		sh 'mvn clean package sonar:sonar'
 
 }
 }
-
+}
     }
  }
