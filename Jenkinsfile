@@ -35,7 +35,7 @@ stage('Static code analysis'){
                 
                 script{
                     
-                    withSonarQubeEnv(credentialsId: 'sonar-api') {
+                    withSonarQubeEnv(credentialsId: 'jenkinssonar') {
                         
                         sh 'mvn clean package sonar:sonar'
                     }
