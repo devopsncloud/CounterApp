@@ -7,7 +7,7 @@ pipeline {
 		git branch: 'main', url: 'https://github.com/devopsncloud/CounterApp.git'
 
 	}		
-
+}
 
 }
 }
