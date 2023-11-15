@@ -22,11 +22,16 @@ stage("Integration Testing "){
         }
       }
 
+	stage("Building stage"){
+
+		steps{
+			sh 'mvn clean install'
 
 
 
 
-
+}
+}
 
     }
  }
