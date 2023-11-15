@@ -26,13 +26,14 @@ stage("Integration Testing "){
 
 		steps{
 			sh 'mvn clean install'
+}
+}
+
 stage ("Static code analysis"){
 	steps{
 
 	 withSonarQubeEnv(credentialsId: 'jenkinssonar') 
     		sh 'mvn clean package sonar:sonar'
-
-
 
 }
 }
